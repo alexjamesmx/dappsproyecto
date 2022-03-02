@@ -9,20 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calistheniks">
+
         <activity
-            android:name=".Login_Activity"
+            android:name=".Catalogo_Activity"
             android:exported="true"
-            android:label="Login">
+            android:label="@string/title_activity_catalogo"
+            android:theme="@style/Theme.Calistheniks.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".registerActivity"
+            android:exported="false"
+            android:label="@string/Register" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false"
+            android:label="Login"></activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

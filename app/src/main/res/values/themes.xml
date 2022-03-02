@@ -13,59 +13,28 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-        <!-- Base application theme. -->
-        <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
-            <item name="android:windowFullscreen">true</item>
-            <item name="colorAccent">@color/colorAccent</item>
-            <item name="colorPrimary">@color/colorPrimary</item>
-            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        </style>
-
-        <style name="ButtonLogin" parent="@style/Theme.AppCompat.Light">
-            <item name="android:textColor">@color/white</item>
-            <item name="colorButtonNormal">@color/colorAccent</item>
-            <item name="colorControlHighlight">@color/yellow</item>
-        </style>
-
-        <style name="ButtonSignUp" parent="@style/Theme.AppCompat.Light">
-            <item name="android:textColor">@color/white</item>
-            <item name="colorButtonNormal">@color/colorPrimary</item>
-            <item name="colorControlHighlight">@color/yellow</item>
-        </style>
-        <style name="ButtonRegister" parent="@style/Theme.AppCompat.Light">
-            <item name="android:textColor">@android:color/black</item>
-            <item name="colorButtonNormal">@color/yellow</item>
-            <item name="colorControlHighlight">@color/colorPrimary</item>
-        </style>
-        <style name="CardView" parent="@style/Base.CardView" />
-        <style name="CardView.Dark" parent="@style/CardView">
-            <item name="cardBackgroundColor">@color/cardview_dark_background</item>
-        </style>
-        <style name="CardView.Light" parent="@style/CardView">
-            <item name="cardBackgroundColor">@color/cardview_light_background</item>
-        </style>
-        <style name="HeadTitle">
-            <item name="android:textSize">50.0dip</item>
-            <item name="android:typeface">sans</item>
-            <item name="android:color">@color/white</item>
-        </style>
-
-        <style name="RegistrationPage">
-            <item name="android:textColorHint">@color/black</item>
-            <item name="android:editTextColor">@color/black</item>
-            <item name="android:colorControlNormal">@color/black</item>
-            <item name="android:background">@color/white</item>
-        </style>
-        <style name="TextInputLayout.OutlinedBox.login" parent='@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox'>
-            <item name='textFillColor'>@color/white</item>
-            <item name='backgroundTint'>@color/white</item>
-            <item name='android:textColor'>@color/white</item>
-            <item name='android:textColorHint'>@color/white</item>
-        </style>
-    <style name="AppTheme.2" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@drawable/login_fondo2</item>
+    <!-- Base application theme. -->
+    <style name='TextAppearance.AppCompat.Display1.titulos' parent="TextAppearance.AppCompat.Display1">
+        <item name='android:textColor'>@color/titulos</item>
+        <item name='android:textStyle'>bold</item>
     </style>
+
+    <!--    FORMULARIO LOG IN USER REGISTRATION-->
+    <style name='Theme.Calistheniks.botonesLayout' parent="Theme.Calistheniks">
+        <item name='android:layout_width'>match_parent</item>
+        <item name='android:layout_height'>1dp</item>
+        <item name='android:layout_weight'>2</item>
+        <item name='android:gravity'>center</item>
+    </style>
+
+    <style name="Theme.Calistheniks.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Calistheniks.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Calistheniks.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
     <!--    ESTILO DE IMAGENES DE PRACTICA 2    -->
