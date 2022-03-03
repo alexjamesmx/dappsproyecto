@@ -1,40 +1,28 @@
 package com.example.calistheniks.ui.login;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import android.view.View;
-import com.example.calistheniks.Catalogo_Activity;
-import com.example.calistheniks.Login_Activity;
+
 import com.example.calistheniks.R;
 import com.example.calistheniks.databinding.FragmentLoginBinding;
 import com.example.calistheniks.registerActivity;
 
-
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 public class LoginFragment extends Fragment {
 
     private FragmentLoginBinding binding;
+
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -60,6 +48,36 @@ public class LoginFragment extends Fragment {
         final TextView textView = binding.textLogin;
         loginViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
+    }
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        binding.loginFragmentHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(
+                        getActivity(),
+                        R.id.nav_host_fragment_content_catalogo
+                );
+                navController.navigateUp();
+                navController.navigate(R.id.nav_home);
+            }
+        });
+
+        binding.loginFragmentRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(
+                        new Intent(
+                            getActivity(),
+                            registerActivity.class
+                        )
+                );
+            }
+        });
+
+        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override

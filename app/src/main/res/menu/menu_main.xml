@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-<!--    <item android:title="Menu 1"  app:showAsAction="always" android:id="@+id/menu_m1"/>-->
-<!--    <item android:title="Menu 2" android:icon="@drawable/ic_search" app:showAsAction="always" android:id="@+id/menu_m2"/>-->
-<!--    <item android:title="Menu 3" android:icon="@drawable/ic_search" app:showAsAction="always" android:id="@+id/menu_m3"/>-->
-</menu>

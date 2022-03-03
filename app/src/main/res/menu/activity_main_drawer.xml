@@ -19,7 +19,7 @@
         <item
             android:id="@+id/nav_login_close"
             android:icon="@drawable/ic_login"
-            android:title="@string/nav_close_session" />
+            android:title="@string/nav_logout_session" />
 <!--        <item-->
 <!--            android:id="@+id/nav_slideshow"-->
 <!--            android:icon="@drawable/ic_menu_slideshow"-->

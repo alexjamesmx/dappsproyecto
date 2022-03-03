@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoritesActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My products"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="24dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|top"
+        android:weightSum="12">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="12"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chalecopeso"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    app:tint="@color/imagenes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_favorite_border">
+                </ImageView>
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bag"
+                    app:tint="@color/imagenes">
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chaleco Latrado 35 Lbs"
+                style="@style/TextAppearance.Material3.BodyLarge">
+            </TextView>
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$2000"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="12"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/barras_chicas_removebg"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    app:tint="@color/imagenes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_favorite_border">
+                </ImageView>
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bag"
+                    app:tint="@color/imagenes">
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chaleco Latrado 35 Lbs"
+                style="@style/TextAppearance.Material3.BodyLarge">
+            </TextView>
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$2000"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
