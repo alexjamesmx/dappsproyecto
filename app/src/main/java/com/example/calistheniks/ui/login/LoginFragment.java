@@ -27,26 +27,8 @@ public class LoginFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-
-//        Button button = (Button) thislayout.findViewById(R.id.loginFragment_register);
-//
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getActivity(), registerActivity.class);
-//                startActivity(intent);
-//            }
-//
-//        });
-
-        LoginViewModel loginViewModel =
-                new ViewModelProvider(this).get(LoginViewModel.class);
-
         binding = FragmentLoginBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textLogin;
-        loginViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
@@ -78,12 +60,6 @@ public class LoginFragment extends Fragment {
         });
 
         super.onViewCreated(view, savedInstanceState);
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
     }
 
 }

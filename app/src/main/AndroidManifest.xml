@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calistheniks">
         <activity
+            android:name=".Detalles_compra_Activity"
+            android:exported="false"
+            android:label="My account"/>
+        <activity
             android:name=".CartActivity"
             android:exported="false"
-            android:label="Shopping cart"/>
+            android:label="Shopping cart" />
         <activity
             android:name=".FavoritesActivity"
             android:exported="false"

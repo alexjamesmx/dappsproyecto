@@ -59,19 +59,6 @@ public class Catalogo_Activity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        binding.loginFragmentHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavController navController = Navigation.findNavController(
-                        getActivity(),
-                        R.id.nav_host_fragment_content_catalogo
-                );
-                navController.navigateUp();
-                navController.navigate(R.id.nav_home);
-            }
-        });
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

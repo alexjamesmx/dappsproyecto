@@ -5,126 +5,96 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="12"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.gallery.GalleryFragment"
+    android:background="@drawable/color_secondary">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:background="@drawable/color_secondary">
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/user_image"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="@drawable/user"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp"
-            android:layout_marginVertical="24dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Abel Alejandro Santiago Garcia"
-            android:textStyle="bold"
-            style="@style/TextAppearance.MaterialComponents.Headline5"
-            android:gravity="center"
-            android:layout_marginHorizontal="24dp">
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="sg.alex32@gmail.com"
-            style="@style/TextAppearance.Material3.BodyLarge"
-            android:gravity="left|center"
-            android:layout_marginHorizontal="36dp"
-            android:layout_marginVertical="16dp"
-            android:drawableLeft="@drawable/google"
-            android:drawablePadding="16dp"/>
-        <Button
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_marginBottom="16dp"
-            android:text="Change password" />
-
-    </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:gravity="center">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center|top"
             android:orientation="vertical">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="My shopping"
+                android:text="My Account"
+                android:textStyle="bold"
                 style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:gravity="center"
                 android:layout_marginHorizontal="24dp"
-                android:layout_marginVertical="16dp"/>
-            <Button
-                android:id="@+id/loginFragment_home"
-                android:layout_width="wrap_content"
+                android:layout_marginVertical="32dp" >
+            </TextView>
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/user_image"
+                android:layout_width="96dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="6"
-                android:backgroundTint="@color/colorAccent"
-                android:text="Facturar"
-                />
+                android:src="@drawable/user"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                android:layout_marginBottom="32dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abel Alejandro Santiago Garcia"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:gravity="center"
+                android:layout_marginHorizontal="24dp">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="12"
+                android:gravity="center"
+                android:layout_marginBottom="80dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="12"
+                    android:layout_height="wrap_content"
+                    android:text="Email:\nsg.alex32@gmail.com"
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:gravity="left|center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginVertical="16dp"
+                    android:drawableLeft="@drawable/google"
+                    android:drawablePadding="24dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="32dp">
+                <Button
+                    android:layout_gravity="center|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:text="Change password" />
+
+                <Button
+                    android:id="@+id/btn_account_details"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:text="My shopping" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nproducto: Ncantidades"
-                style="@style/TextAppearance.MaterialComponents.Headline6"
-                android:gravity="start"
-                android:layout_marginHorizontal="24dp">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ver mas"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:gravity="start"
-                android:layout_marginHorizontal="24dp">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nproducto: Ncantidades"
-                style="@style/TextAppearance.MaterialComponents.Headline6"
-                android:gravity="start"
-                android:layout_marginHorizontal="24dp">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ver detalles"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:gravity="start"
-                android:layout_marginHorizontal="24dp">
-            </TextView>
-
-
-        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
 
 
     <TextView
