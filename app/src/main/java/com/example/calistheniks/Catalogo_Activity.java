@@ -34,43 +34,33 @@ public class Catalogo_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
- 
+        //VINCULAR LA VISTA CON EL CONTROLADOR POR MEDIO DE BINDING
         binding = ActivityCatalogoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.appBarCatalogo.toolbar);
-//        binding.appBarCatalogo.fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_login)
+                R.id.nav_catalogo, R.id.nav_account, R.id.nav_login)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_catalogo);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
-
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
+        //Uso de menu y su navegacion
         switch (item.getItemId()) {
+
             case R.id.action_favorite:
                 Toast.makeText(
                         this,
                         "Favoritos",
                         Toast.LENGTH_SHORT
                 ).show();
-
                 Intent intent = new Intent(Catalogo_Activity.this, FavoritesActivity.class);
                 startActivity(intent);
                 break;
@@ -89,23 +79,8 @@ public class Catalogo_Activity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.catalogo_, menu);
         return true;
     }

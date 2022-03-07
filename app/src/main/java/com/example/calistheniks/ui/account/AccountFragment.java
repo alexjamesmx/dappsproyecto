@@ -1,57 +1,51 @@
-package com.example.calistheniks.ui.gallery;
+package com.example.calistheniks.ui.account;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 
-import com.example.calistheniks.Detalles_compra_Activity;
-import com.example.calistheniks.R;
-import com.example.calistheniks.databinding.FragmentGalleryBinding;
-import com.example.calistheniks.databinding.FragmentLoginBinding;
-import com.example.calistheniks.registerActivity;
+import com.example.calistheniks.Myshopping_Activity;
+import com.example.calistheniks.databinding.FragmentAccountBinding;
 
-public class GalleryFragment extends Fragment {
-    private FragmentGalleryBinding binding;
+//todos los fragmentos necesitan de un onCreate y un onCreateView
+public class AccountFragment extends Fragment {
+    private FragmentAccountBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        //VINCULAR LA VISTA CON EL CONTROLADOR POR MEDIO DE BINDING
+        binding = FragmentAccountBinding.inflate(inflater, container, false);
+        //Para obtener una referencia a la vista raíz, llama al método getRoot();
         View root = binding.getRoot();
-
         return root;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        binding.btnAccountDetails.setOnClickListener(new View.OnClickListener() {
+        //Al pulsar el boton "my shopping" se navega a la actividad myshopping
+        binding.btnAccountMyshopping.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(
                         new Intent(
                                 getActivity(),
-                                Detalles_compra_Activity.class
+                                Myshopping_Activity.class
                         )
                 );
             }
         });
-
         super.onViewCreated(view, savedInstanceState);
     }
 

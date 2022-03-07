@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginFragment"
-    android:orientation="vertical"
     android:layout_gravity="center_vertical"
+    android:background="@color/subtitulos"
     android:gravity="top|center"
-    android:background="@color/subtitulos">
-
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginFragment">
+    <!--CONTENIDO DE INICIO DE SESION CON SCROLL VERTICAL-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,110 +18,93 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center|top"
-            android:background="@drawable/color_secondary"
             android:layout_marginBottom="24dp"
-            >
+            android:background="@drawable/color_secondary"
+            android:gravity="center|top"
+            android:orientation="vertical">
+            <!--HEADLINE-->
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Enter your credentials"
+                android:textStyle="bold" />
+            <!--IMAGEN-->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_person"
+                app:tint="#D3000000" />
 
-                <TextView
+            <!--CONTENIDO DE FORMULARIO-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:hint="@string/Username"
+                android:inputType="text"
+                app:boxStrokeColor="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:helperText="Enter user">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInLayoutPassword"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:hint="@string/Password"
+                app:helperText="Enter Password"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="12dp"
+                    android:tint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--CONTENIDO DE BOTONES-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/loginFragment_catalogo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enter your credentials"
-                    style="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:layout_marginHorizontal="24dp"
-                    android:layout_marginTop="24dp"
-                    android:textStyle="bold"
-                    />
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="6"
+                    android:backgroundTint="@color/colorAccent"
+                    android:padding="16dp"
+                    android:text="@string/Login" />
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/ic_person"
-                    app:tint="#D3000000" />
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/loginFragment_register"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="@string/Username"
-                    android:inputType="text"
-                    app:boxStrokeColor="@color/black"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="20"
-                    app:endIconMode="clear_text"
-                    app:helperText="Enter user"
-                   android:layout_marginHorizontal="24dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_person"
-                        android:drawablePadding="12dp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/txtInLayoutPassword"
-                    style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/Password"
-                    app:helperText="Enter Password"
-                    app:passwordToggleEnabled="true"
-                    android:layout_marginHorizontal="24dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_lock"
-                        android:drawablePadding="12dp"
-                        android:tint="@color/black" />
-                </com.google.android.material.textfield.TextInputLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="80dp">
-
-                    <Button
-                        android:padding="16dp"
-                        android:id="@+id/loginFragment_home"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_weight="6"
-                        android:backgroundTint="@color/colorAccent"
-                        android:text="@string/Login"
-                        />
-
-                    <Button
-                        android:padding="16dp"
-                        android:id="@+id/loginFragment_register"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginEnd="32dp"
-                        android:layout_weight="6"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:text="@string/Register"></Button>
-                </LinearLayout>
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_weight="6"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:padding="16dp"
+                    android:text="@string/Register"></Button>
             </LinearLayout>
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <TextView
-        android:visibility="gone"
-        android:id="@+id/text_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </LinearLayout>

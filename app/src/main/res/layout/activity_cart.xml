@@ -4,186 +4,194 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoritesActivity"
     android:orientation="vertical"
-    android:weightSum="12">
-
+    android:weightSum="12"
+    tools:context=".FavoritesActivity">
+<!--HEADER-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/color_secondary">
 
         <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My products"
-            style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_marginHorizontal="24dp"
             android:layout_marginVertical="24dp"
-            android:textStyle="bold"
-            />
+            android:text="My products"
+            android:textStyle="bold" />
     </LinearLayout>
-
+<!--CONTENIDO DE PRODUCTOS CON SCROLL-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12"
-        >
+        android:layout_weight="12">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="start|top"
+                android:orientation="horizontal"
                 android:weightSum="12">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/chalecopeso"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/chalecopeso" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_marginStart="16dp"
-                            app:tint="@color/imagenes"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                        <ImageView
                             android:layout_marginStart="16dp"
+                            android:src="@drawable/plus"
+                            app:tint="@color/imagenes"></ImageView>
+
+                        <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
                             android:src="@drawable/minus"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ncanti"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
+                            android:layout_marginHorizontal="16dp"
+                            android:text="Ncanti"></TextView>
                     </LinearLayout>
+
                     <TextView
-                        android:layout_marginHorizontal="16dp"
+                        style="@style/TextAppearance.Material3.BodyLarge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="$2000"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
-                        <ImageView
-                            android:layout_marginHorizontal="16dp"
                             android:layout_width="0dp"
-                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$2000"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
                             android:layout_height="40dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
                             android:src="@drawable/ic_shopping_bag"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/barras_chicas_removebg"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/barras_chicas_removebg" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_marginStart="16dp"
-                            app:tint="@color/imagenes"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                        <ImageView
                             android:layout_marginStart="16dp"
+                            android:src="@drawable/plus"
+                            app:tint="@color/imagenes"></ImageView>
+
+                        <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
                             android:src="@drawable/minus"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ncanti"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
+                            android:layout_marginHorizontal="16dp"
+                            android:text="Ncanti"></TextView>
                     </LinearLayout>
+
                     <TextView
-                        android:layout_marginHorizontal="16dp"
+                        style="@style/TextAppearance.Material3.BodyLarge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="$2000"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
-                        <ImageView
-                            android:layout_marginHorizontal="16dp"
                             android:layout_width="0dp"
-                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$2000"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
                             android:layout_height="40dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
                             android:src="@drawable/ic_shopping_bag"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -192,154 +200,162 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="start|top"
+                android:orientation="horizontal"
                 android:weightSum="12">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/chalecopeso"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/chalecopeso" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_marginStart="16dp"
-                            app:tint="@color/imagenes"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                        <ImageView
                             android:layout_marginStart="16dp"
+                            android:src="@drawable/plus"
+                            app:tint="@color/imagenes"></ImageView>
+
+                        <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
                             android:src="@drawable/minus"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ncanti"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
+                            android:layout_marginHorizontal="16dp"
+                            android:text="Ncanti"></TextView>
                     </LinearLayout>
+
                     <TextView
-                        android:layout_marginHorizontal="16dp"
+                        style="@style/TextAppearance.Material3.BodyLarge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="$2000"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
-                        <ImageView
-                            android:layout_marginHorizontal="16dp"
                             android:layout_width="0dp"
-                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$2000"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
                             android:layout_height="40dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
                             android:src="@drawable/ic_shopping_bag"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/barras_chicas_removebg"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/barras_chicas_removebg" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_marginStart="16dp"
-                            app:tint="@color/imagenes"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                        <ImageView
                             android:layout_marginStart="16dp"
+                            android:src="@drawable/plus"
+                            app:tint="@color/imagenes"></ImageView>
+
+                        <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
                             android:src="@drawable/minus"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ncanti"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
+                            android:layout_marginHorizontal="16dp"
+                            android:text="Ncanti"></TextView>
                     </LinearLayout>
+
                     <TextView
-                        android:layout_marginHorizontal="16dp"
+                        style="@style/TextAppearance.Material3.BodyLarge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="$2000"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
-                        <ImageView
-                            android:layout_marginHorizontal="16dp"
                             android:layout_width="0dp"
-                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$2000"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
                             android:layout_height="40dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
                             android:src="@drawable/ic_shopping_bag"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -348,154 +364,162 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="start|top"
+                android:orientation="horizontal"
                 android:weightSum="12">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/chalecopeso"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/chalecopeso" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_marginStart="16dp"
-                            app:tint="@color/imagenes"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                        <ImageView
                             android:layout_marginStart="16dp"
+                            android:src="@drawable/plus"
+                            app:tint="@color/imagenes"></ImageView>
+
+                        <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
                             android:src="@drawable/minus"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ncanti"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
+                            android:layout_marginHorizontal="16dp"
+                            android:text="Ncanti"></TextView>
                     </LinearLayout>
+
                     <TextView
-                        android:layout_marginHorizontal="16dp"
+                        style="@style/TextAppearance.Material3.BodyLarge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="$2000"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
-                        <ImageView
-                            android:layout_marginHorizontal="16dp"
                             android:layout_width="0dp"
-                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$2000"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
                             android:layout_height="40dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
                             android:src="@drawable/ic_shopping_bag"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/barras_chicas_removebg"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/barras_chicas_removebg" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_marginStart="16dp"
-                            app:tint="@color/imagenes"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                        <ImageView
                             android:layout_marginStart="16dp"
+                            android:src="@drawable/plus"
+                            app:tint="@color/imagenes"></ImageView>
+
+                        <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
                             android:src="@drawable/minus"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ncanti"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
+                            android:layout_marginHorizontal="16dp"
+                            android:text="Ncanti"></TextView>
                     </LinearLayout>
+
                     <TextView
-                        android:layout_marginHorizontal="16dp"
+                        style="@style/TextAppearance.Material3.BodyLarge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="$2000"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
-                        <ImageView
-                            android:layout_marginHorizontal="16dp"
                             android:layout_width="0dp"
-                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$2000"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
                             android:layout_height="40dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
                             android:src="@drawable/ic_shopping_bag"
-                            app:tint="@color/imagenes">
-                        </ImageView>
+                            app:tint="@color/imagenes"></ImageView>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -505,33 +529,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:orientation="vertical"
+                android:background="@color/subtitulos"
                 android:gravity="center|top"
-                android:background="@color/subtitulos">
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="12"
                     android:layout_marginHorizontal="24dp"
-                    android:layout_marginVertical="8dp">
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="6"
-                        android:layout_height="match_parent"
-                        android:text="Total to pay: "
                         style="@style/TextAppearance.MaterialComponents.Headline5"
-                        android:textStyle="bold"
-                        />
-                    <TextView
                         android:layout_width="0dp"
-                        android:layout_weight="6"
                         android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Total to pay: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
                         android:gravity="right"
                         android:text="$200"
-                        style="@style/TextAppearance.MaterialComponents.Headline5"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -542,13 +567,10 @@
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/colorAccent"
-                    android:text="Buy"
-                    />
+                    android:text="Buy" />
 
             </LinearLayout>
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
-
 </LinearLayout>

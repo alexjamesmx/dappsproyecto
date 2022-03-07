@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FavoritesActivity"
     android:orientation="vertical">
-
-
+    <!--HEADER-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +22,7 @@
             android:textStyle="bold"
             />
     </LinearLayout>
-
+    <!--CONTENIDO DE PRODUCTOS CON SCROLL-->
     <androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

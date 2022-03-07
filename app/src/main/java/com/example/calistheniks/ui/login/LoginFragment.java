@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -17,25 +18,24 @@ import com.example.calistheniks.registerActivity;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-
+//todos los fragmentos necesitan de un onCreate y un onCreateView
 public class LoginFragment extends Fragment {
 
     private FragmentLoginBinding binding;
 
-
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
+        //VINCULAR LA VISTA CON EL CONTROLADOR POR MEDIO DE BINDING
         binding = FragmentLoginBinding.inflate(inflater, container, false);
+        //Para obtener una referencia a la vista raíz, llama al método getRoot();
         View root = binding.getRoot();
         return root;
     }
 
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        binding.loginFragmentHome.setOnClickListener(new View.OnClickListener() {
+        //Al pulsar el boton "my Login" se navega a la actividad catalogo
+        binding.loginFragmentCatalogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavController navController = Navigation.findNavController(
@@ -43,22 +43,21 @@ public class LoginFragment extends Fragment {
                         R.id.nav_host_fragment_content_catalogo
                 );
                 navController.navigateUp();
-                navController.navigate(R.id.nav_home);
+                navController.navigate(R.id.nav_catalogo);
             }
         });
-
+        //Al pulsar el boton "register" se navega a la actividad register
         binding.loginFragmentRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(
                         new Intent(
-                            getActivity(),
-                            registerActivity.class
+                                getActivity(),
+                                registerActivity.class
                         )
                 );
             }
         });
-
         super.onViewCreated(view, savedInstanceState);
     }
 

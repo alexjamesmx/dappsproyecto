@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calistheniks">
         <activity
-            android:name=".Detalles_compra_Activity"
+            android:name=".Myshopping_Activity"
             android:exported="false"
             android:label="My account"/>
         <activity
@@ -36,9 +36,6 @@
             android:name=".registerActivity"
             android:exported="false"
             android:label="@string/Register" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

@@ -12,20 +12,22 @@ import android.widget.Button;
 
 public class registerActivity extends AppCompatActivity {
     private ActionBar actionBar;
-    private Button btnregistrohome;
+    private Button btnregistrocatalogo;
+
     //private Binding registerActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        btnregistrohome = findViewById(R.id.btn_register_catalog) ;
-        actionBar = getSupportActionBar();
+        btnregistrocatalogo = findViewById(R.id.btn_register_catalog);
 
-        if(actionBar != null){
+        //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
+        actionBar = getSupportActionBar();
+        if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-        btnregistrohome.setOnClickListener(new View.OnClickListener() {
+        //AL PULSAR EL BOTON REGISTARSE NAVEGAMOS AL CATALOGO
+        btnregistrocatalogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(
@@ -36,9 +38,10 @@ public class registerActivity extends AppCompatActivity {
                 );
             }
         });
-
     }
 
+
+    //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         finish();

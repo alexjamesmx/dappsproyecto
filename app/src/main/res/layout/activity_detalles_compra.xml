@@ -4,394 +4,409 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoritesActivity"
     android:orientation="vertical"
-    android:weightSum="12">
-
+    android:weightSum="12"
+    tools:context=".FavoritesActivity">
+    <!--HEADER-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/color_secondary">
 
         <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shopping details"
-            style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_marginHorizontal="24dp"
             android:layout_marginVertical="24dp"
-            android:textStyle="bold"
-            />
+            android:text="Shopping details"
+            android:textStyle="bold" />
     </LinearLayout>
-
+    <!--CONTENIDO DE PRODUCTOS CON SCROLL-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12"
-        >
+        android:layout_weight="12">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="start|top"
+                android:orientation="horizontal"
                 android:weightSum="12">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/chalecopeso"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="start"
-                        android:weightSum="12">
-                        <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="Cantidad:"
-                            android:textStyle="bold"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
-                        <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="NCant"
-                            android:textStyle="bold"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
-                    </LinearLayout>
-                    <TextView
                         android:layout_marginHorizontal="16dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:src="@drawable/chalecopeso" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="start"
                         android:orientation="horizontal"
-                        android:gravity="center"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="0dp"
-                            android:layout_weight="8"
                             android:layout_height="wrap_content"
-                            android:text="$Total"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="Cantidad:"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            style="@style/TextAppearance.Material3.BodyLarge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="NCant"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextAppearance.Material3.BodyLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="12">
+
+                        <TextView
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$Total"
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="4"
-                            android:layout_height="wrap_content"
-                            android:text="Bill"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
+                            android:text="Bill"
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
+
                     <Button
-                        android:drawableLeft="@drawable/ic_pdf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="8dp"
                         android:backgroundTint="@color/colorAccent"
-                        android:text="PDF"
-                        />
+                        android:drawableLeft="@drawable/ic_pdf"
+                        android:text="PDF" />
+
                     <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="32dp"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorAccent"
                         android:drawableLeft="@drawable/xml2"
                         android:drawablePadding="100dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="32dp"
-                        android:layout_marginBottom="8dp"
-                        android:backgroundTint="@color/colorAccent"
-                        android:text="XML"
-                        />
+                        android:text="XML" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="start|top"
+                android:orientation="horizontal"
                 android:weightSum="12">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/barras_removebg"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="start"
-                        android:weightSum="12">
-                        <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="Cantidad:"
-                            android:textStyle="bold"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
-                        <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="NCant"
-                            android:textStyle="bold"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
-                    </LinearLayout>
-                    <TextView
                         android:layout_marginHorizontal="16dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:src="@drawable/barras_removebg" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="start"
                         android:orientation="horizontal"
-                        android:gravity="center"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="0dp"
-                            android:layout_weight="8"
                             android:layout_height="wrap_content"
-                            android:text="$Total"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="Cantidad:"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            style="@style/TextAppearance.Material3.BodyLarge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="NCant"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextAppearance.Material3.BodyLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="12">
+
+                        <TextView
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$Total"
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="4"
-                            android:layout_height="wrap_content"
-                            android:text="Bill"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
+                            android:text="Bill"
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
+
                     <Button
-                        android:drawableLeft="@drawable/ic_pdf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="8dp"
                         android:backgroundTint="@color/colorAccent"
-                        android:text="PDF"
-                        />
+                        android:drawableLeft="@drawable/ic_pdf"
+                        android:text="PDF" />
+
                     <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="32dp"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorAccent"
                         android:drawableLeft="@drawable/xml2"
                         android:drawablePadding="100dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="32dp"
-                        android:layout_marginBottom="8dp"
-                        android:backgroundTint="@color/colorAccent"
-                        android:text="XML"
-                        />
+                        android:text="XML" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="start|top"
+                android:orientation="horizontal"
                 android:weightSum="12">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/barras_removebg"
                         android:layout_gravity="start"
-                        android:layout_marginHorizontal="16dp" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="start"
-                        android:weightSum="12">
-                        <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="Cantidad:"
-                            android:textStyle="bold"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
-                        <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_height="wrap_content"
-                            android:text="NCant"
-                            android:textStyle="bold"
-                            style="@style/TextAppearance.Material3.BodyLarge">
-                        </TextView>
-                    </LinearLayout>
-                    <TextView
                         android:layout_marginHorizontal="16dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Chaleco Latrado 35 Lbs"
-                        style="@style/TextAppearance.Material3.BodyLarge">
-                    </TextView>
+                        android:src="@drawable/barras_removebg" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="start"
                         android:orientation="horizontal"
-                        android:gravity="center"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
+                            style="@style/TextAppearance.Material3.BodyLarge"
                             android:layout_width="0dp"
-                            android:layout_weight="8"
                             android:layout_height="wrap_content"
-                            android:text="$Total"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="Cantidad:"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            style="@style/TextAppearance.Material3.BodyLarge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="NCant"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextAppearance.Material3.BodyLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:text="Chaleco Latrado 35 Lbs"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="12">
+
+                        <TextView
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="8"
+                            android:text="$Total"
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="12"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="6"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="vertical"
+                    android:weightSum="12">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         android:weightSum="12">
+
                         <TextView
-                            android:layout_marginHorizontal="16dp"
-                            android:layout_width="0dp"
-                            android:layout_weight="4"
-                            android:layout_height="wrap_content"
-                            android:text="Bill"
                             style="@style/TextAppearance.MaterialComponents.Headline5"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_weight="4"
+                            android:text="Bill"
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
+
                     <Button
-                        android:drawableLeft="@drawable/ic_pdf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="8dp"
                         android:backgroundTint="@color/colorAccent"
-                        android:text="PDF"
-                        />
+                        android:drawableLeft="@drawable/ic_pdf"
+                        android:text="PDF" />
+
                     <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="32dp"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorAccent"
                         android:drawableLeft="@drawable/xml2"
                         android:drawablePadding="100dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="32dp"
-                        android:layout_marginBottom="8dp"
-                        android:backgroundTint="@color/colorAccent"
-                        android:text="XML"
-                        />
+                        android:text="XML" />
                 </LinearLayout>
             </LinearLayout>
 
 
         </LinearLayout>
-
 
 
     </androidx.core.widget.NestedScrollView>

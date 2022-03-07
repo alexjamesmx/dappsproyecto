@@ -7,20 +7,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class Detalles_compra_Activity extends AppCompatActivity {
+public class Myshopping_Activity extends AppCompatActivity {
     private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_compra);
-        actionBar = getSupportActionBar();
 
+        //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
+        actionBar = getSupportActionBar();
         if(actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
-
+    //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         finish();

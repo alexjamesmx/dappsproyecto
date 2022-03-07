@@ -3,25 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_catalogo">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.calistheniks.ui.home.HomeFragment"
+        android:id="@+id/nav_catalogo"
+        android:name="com.example.calistheniks.ui.catalogo.CatalogoFragment"
         android:label="@string/catalog"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_catalogo" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.calistheniks.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_account"
+        android:name="com.example.calistheniks.ui.account.AccountFragment"
         android:label="@string/account"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.calistheniks.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_account" />
 
     <fragment
         android:id="@+id/nav_login"
@@ -29,9 +23,4 @@
         android:label="@string/Login"
         tools:layout="@layout/fragment_login"/>
 
-    <fragment
-        android:id="@+id/nav_favorites"
-        android:name="com.example.calistheniks.FavoritesFragment"
-        android:label="Favorites"
-        tools:layout="@layout/fragment_favorites"/>
 </navigation>

@@ -14,19 +14,15 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+
+        //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
         actionBar = getSupportActionBar();
-
-
-        if(actionBar != null){
+        if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-
-
-
     }
 
-
+    //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         finish();
