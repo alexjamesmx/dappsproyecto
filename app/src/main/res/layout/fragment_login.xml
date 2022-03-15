@@ -40,36 +40,39 @@
 
             <!--CONTENIDO DE FORMULARIO-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_til_email"
                 style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
-                android:hint="@string/Username"
-                android:inputType="text"
+                android:hint="@string/Email"
                 app:boxStrokeColor="@color/black"
-                app:counterEnabled="true"
-                app:counterMaxLength="20"
                 app:endIconMode="clear_text"
-                app:helperText="Enter user">
+                app:helperText="Enter email">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_tiet_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_person"
-                    android:drawablePadding="12dp" />
+                    android:drawablePadding="12dp"
+                    android:inputType="text"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtInLayoutPassword"
+                android:id="@+id/login_til_password"
                 style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
                 android:hint="@string/Password"
-                app:helperText="Enter Password"
-                app:passwordToggleEnabled="true">
+                app:helperText="Enter password (8 length min)"
+                app:passwordToggleEnabled="true"
+                app:counterEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_tiet_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_lock"
@@ -104,7 +107,14 @@
                     android:backgroundTint="@color/colorPrimary"
                     android:padding="16dp"
                     android:text="@string/Register"></Button>
+
             </LinearLayout>
+<!--            <TextView-->
+<!--                android:gravity="center"-->
+<!--                style="@style/ThemeOverlay.Material3.MaterialAlertDialog"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="You must enter your credentials correctly"/>-->
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

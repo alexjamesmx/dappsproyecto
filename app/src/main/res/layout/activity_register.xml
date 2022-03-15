@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/subtitulos">
+    android:background="@color/subtitulos"
+    tools:context=".registerActivity">
     <!--MAIN-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,96 +36,126 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/register_til_firstname"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
                 android:hint="FirstName"
+                app:endIconMode="clear_text"
+                app:helperText="Just letters"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
               >
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_tiet_firstname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_person"
                     android:drawablePadding="12dp"
-                    android:layout_margin="12dp"/>
+                    android:inputType="textPersonName"
+                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/register_til_lastname"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
-                android:hint="LastName">
+                android:hint="LastName"
+                app:endIconMode="clear_text"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:helperText="Just letters"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_tiet_lastname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_person"
                     android:drawablePadding="12dp"
-                    android:layout_margin="12dp"/>
+                    android:inputType="textPersonName"
+                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/register_til_email"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
-                android:hint="@string/Email">
+                android:hint="@string/Email"
+                app:endIconMode="clear_text"
+                app:helperText="user@domain.com">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_tiet_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="12dp"
-                    android:layout_margin="12dp"/>
+                    android:inputType="textEmailAddress"/>
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/register_til_phonenumber"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
-                android:hint="PhoneNumber">
+                android:hint="PhoneNumber"
+                app:helperText="Your phone number"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_tiet_phonenumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_phone"
                     android:drawablePadding="12dp"
-                    android:layout_margin="12dp"/>
+                    android:inputType="phone"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/register_til_homeaddress"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
-                android:hint="HomeAddress">
+                android:hint="HomeAddress"
+                app:helperText="Your home address">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_tiet_homeaddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_house"
                     android:drawablePadding="12dp"
-                    android:layout_margin="12dp"/>
+                    android:inputType="text"
+                    app:endIconMode="clear_text" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/register_til_password"
+                style="@style/Widget.Material3.TextInputEditText.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
                 android:hint="@string/Password"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                app:helperText="Your password">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_tiet_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="12dp"
-                    android:layout_margin="12dp"/>
+                    android:inputType="textWebPassword" />
             </com.google.android.material.textfield.TextInputLayout>
             <Button
                 android:id="@+id/btn_register_catalog"
