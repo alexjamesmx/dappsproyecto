@@ -1,0 +1,286 @@
+[
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_google.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/google.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_side_nav_bar.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_bag.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/bag.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_avatar.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/avatar.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_wrist.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/wrist.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_house.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_house.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_nav_header_catalogo.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/nav_header_catalogo.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_menu_gallery.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_barras_chicas_removebg.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/barras_chicas_removebg.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_barras_removebg.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/barras_removebg.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/navigation_mobile_navigation.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_xml2.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/xml2.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_plus.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/plus.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_fragment_catalogo.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/fragment_catalogo.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_barras.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/barras.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/menu_catalogo_.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/menu/catalogo_.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_fondo_3.jpeg.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/fondo_3.jpeg"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_helper.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_helper.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_app_bar_catalogo.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/app_bar_catalogo.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_phone.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_phone.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_color_secondary.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/color_secondary.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_search.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_search.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_user.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/user.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_logo_3_png.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/logo_3_png.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_shopping_bag.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_shopping_bag.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_login_fondo2.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/login_fondo2.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_cart.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_cart.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_favorite_border.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_favorite_border.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_chalecopeso.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/chalecopeso.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_logo.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/logo.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_wrist_removebg.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/wrist_removebg.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_email.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_email.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_shopping_cart.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_shopping_cart.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_xml.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/xml.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_login.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_login.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/menu_activity_main_drawer.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_btn_singup.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/btn_singup.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_detalles_compra.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_detalles_compra.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_favorite.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_favorite.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_fragment_login.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_login_fondo.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/login_fondo.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_menu_camera.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_btn_login.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/btn_login.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_lock.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/lock.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_person.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_person.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_content_catalogo.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/content_catalogo.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_fragment_account.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/fragment_account.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_gmail.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/gmail.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_menu_slideshow.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_barras_chicas.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/barras_chicas.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_catalogo.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_catalogo.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_lock.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_pdf.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_pdf.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_minus.png.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable-v24/minus.png"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_item_producto.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/item_producto.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_favorites.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_favorites.xml"
+    }
+]

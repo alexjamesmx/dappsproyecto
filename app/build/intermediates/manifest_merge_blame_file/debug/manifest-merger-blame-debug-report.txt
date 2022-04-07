@@ -1,0 +1,141 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.calistheniks"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:7:5-45:19
+14        android:allowBackup="true"
+14-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] /home/alex/.gradle/caches/transforms-3/d79cd730aff89e16bbe6bbee05f6ceb1/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.Calistheniks"
+22-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:13:9-50
+23        android:usesCleartextTraffic="true" >
+23-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:14:9-44
+24        <activity
+24-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:15:9-17:40
+25            android:name="com.example.calistheniks.Helper"
+25-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:16:13-35
+26            android:exported="false" />
+26-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:17:13-37
+27        <activity
+27-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:18:9-21:42
+28            android:name="com.example.calistheniks.Myshopping_Activity"
+28-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:19:13-48
+29            android:exported="false"
+29-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:20:13-37
+30            android:label="My account" />
+30-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:21:13-39
+31        <activity
+31-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:22:9-25:45
+32            android:name="com.example.calistheniks.CartActivity"
+32-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:23:13-41
+33            android:exported="false"
+33-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:24:13-37
+34            android:label="Shopping cart" />
+34-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:25:13-42
+35        <activity
+35-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:26:9-29:41
+36            android:name="com.example.calistheniks.FavoritesActivity"
+36-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:27:13-46
+37            android:exported="false"
+37-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:28:13-37
+38            android:label="Favorites" />
+38-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:29:13-38
+39        <activity
+39-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:30:9-40:20
+40            android:name="com.example.calistheniks.Catalogo_Activity"
+40-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:31:13-46
+41            android:exported="true"
+41-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:32:13-36
+42            android:label="@string/title_activity_catalogo"
+42-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:33:13-60
+43            android:theme="@style/Theme.Calistheniks.NoActionBar" >
+43-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:34:13-66
+44            <intent-filter>
+44-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:35:13-39:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:36:17-69
+45-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:36:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:38:17-77
+47-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:38:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:41:9-44:48
+51            android:name="com.example.calistheniks.registerActivity"
+51-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:42:13-45
+52            android:exported="false"
+52-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:43:13-37
+53            android:label="@string/Register" />
+53-->/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/AndroidManifest.xml:44:13-45
+54
+55        <provider
+55-->[com.squareup.picasso:picasso:2.8] /home/alex/.gradle/caches/transforms-3/94b8fb5bda12c49ce349a034df419b9c/transformed/jetified-picasso-2.8/AndroidManifest.xml:8:9-11:40
+56            android:name="com.squareup.picasso.PicassoProvider"
+56-->[com.squareup.picasso:picasso:2.8] /home/alex/.gradle/caches/transforms-3/94b8fb5bda12c49ce349a034df419b9c/transformed/jetified-picasso-2.8/AndroidManifest.xml:9:13-64
+57            android:authorities="com.example.calistheniks.com.squareup.picasso"
+57-->[com.squareup.picasso:picasso:2.8] /home/alex/.gradle/caches/transforms-3/94b8fb5bda12c49ce349a034df419b9c/transformed/jetified-picasso-2.8/AndroidManifest.xml:10:13-72
+58            android:exported="false" />
+58-->[com.squareup.picasso:picasso:2.8] /home/alex/.gradle/caches/transforms-3/94b8fb5bda12c49ce349a034df419b9c/transformed/jetified-picasso-2.8/AndroidManifest.xml:11:13-37
+59        <provider
+59-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+61            android:authorities="com.example.calistheniks.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.0.0] /home/alex/.gradle/caches/transforms-3/a041a9a952b29f6964d85f5771c8e429/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/alex/.gradle/caches/transforms-3/2d2b81fd1f5d13f7e9fe71a47a19c028/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/alex/.gradle/caches/transforms-3/2d2b81fd1f5d13f7e9fe71a47a19c028/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/alex/.gradle/caches/transforms-3/2d2b81fd1f5d13f7e9fe71a47a19c028/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+69        </provider>
+70
+71        <uses-library
+71-->[androidx.window:window:1.0.0] /home/alex/.gradle/caches/transforms-3/f2c1d0bfc6da84d53bbcfedc5525574c/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+72            android:name="androidx.window.extensions"
+72-->[androidx.window:window:1.0.0] /home/alex/.gradle/caches/transforms-3/f2c1d0bfc6da84d53bbcfedc5525574c/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0] /home/alex/.gradle/caches/transforms-3/f2c1d0bfc6da84d53bbcfedc5525574c/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+74        <uses-library
+74-->[androidx.window:window:1.0.0] /home/alex/.gradle/caches/transforms-3/f2c1d0bfc6da84d53bbcfedc5525574c/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+75            android:name="androidx.window.sidecar"
+75-->[androidx.window:window:1.0.0] /home/alex/.gradle/caches/transforms-3/f2c1d0bfc6da84d53bbcfedc5525574c/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0] /home/alex/.gradle/caches/transforms-3/f2c1d0bfc6da84d53bbcfedc5525574c/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+77    </application>
+78
+79</manifest>
