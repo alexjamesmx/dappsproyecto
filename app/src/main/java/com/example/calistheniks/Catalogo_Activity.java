@@ -1,13 +1,16 @@
 package com.example.calistheniks;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
+import com.example.calistheniks.databinding.FragmentCatalogoBinding;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -43,24 +46,41 @@ public class Catalogo_Activity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_catalogo, R.id.nav_account, R.id.nav_login)
+                R.id.nav_catalogo, R.id.nav_account, R.id.nav_login,R.id.nav_login_close)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_catalogo);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    navigationView.getMenu().getItem(3).setOnMenuItemClickListener((d)-> {
+        Toast.makeText(Catalogo_Activity.this,"omg", Toast.LENGTH_LONG).show();
+        navigationView.getMenu().getItem(3).setVisible(false);
+        navigationView.getMenu().getItem(2).setVisible(true);
+        SharedPreferences preferences = getSharedPreferences("calistenix", 0);
+        preferences.edit().remove("idcliente").commit();
+        preferences.edit().remove("token").commit();
+        return false;
+    });
+    navigationView.getMenu().getItem(2).setOnMenuItemClickListener(a ->{
+        navigationView.getMenu().getItem(3).setVisible(true);
+//        navigationView.getMenu().getItem(2).setVisible(false);
+
+        return false;
+        });
+
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         //Uso de menu y su navegacion
         switch (item.getItemId()) {
 
             case R.id.action_favorite:
-                Toast.makeText(
-                        this,
-                        "Favoritos",
-                        Toast.LENGTH_SHORT
-                ).show();
+//                Toast.makeText(
+//                        this,
+//                        "Favoritos",
+//                        Toast.LENGTH_SHORT
+//                ).show();
                 Intent intent = new Intent(Catalogo_Activity.this, FavoritesActivity.class);
                 startActivity(intent);
                 break;

@@ -69,6 +69,7 @@ id app_bar_catalogo
 id btn_account_myshopping
 id btn_register_catalog
 id drawer_layout
+id favoritos
 id imageView
 id iv_img_producto
 id loginFragment_catalogo

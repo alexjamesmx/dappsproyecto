@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_login">
+    app:startDestination="@+id/nav_catalogo">
 
     <fragment
         android:id="@+id/nav_catalogo"
@@ -19,6 +19,11 @@
 
     <fragment
         android:id="@+id/nav_login"
+        android:name="com.example.calistheniks.pub.fragments.LoginFragment"
+        android:label="@string/Login"
+        tools:layout="@layout/fragment_login"/>
+    <fragment
+        android:id="@+id/nav_login_close"
         android:name="com.example.calistheniks.pub.fragments.LoginFragment"
         android:label="@string/Login"
         tools:layout="@layout/fragment_login"/>

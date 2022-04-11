@@ -5,11 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".pub.fragments.CatalogoFragment"
     android:id="@+id/srl_productos">
-
     <ListView
         android:id="@+id/lv_productos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@android:color/transparent" />
-
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

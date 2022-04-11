@@ -27,6 +27,8 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.calistheniks.databinding.ActivityFavoritesBinding;
 import com.example.calistheniks.databinding.ActivityRegisterBinding;
+import com.example.calistheniks.databinding.FragmentCatalogoBinding;
+import com.example.calistheniks.databinding.ItemProductoBinding;
 import com.example.calistheniks.pub.ProductoAdapter;
 
 import org.json.JSONObject;
@@ -41,14 +43,15 @@ public class FavoritesActivity extends AppCompatActivity {
     private RequestQueue conServ;
     private ProductoAdapter adaptador;
     private ActivityFavoritesBinding binding;
+    private ItemProductoBinding itembinding;
     private final String END_PONT = Helper.baseUrl() + "productos/getdeseos";
-//    private final String END_PONT = Helper.baseUrl() + "productos/removerdeseos";
-
+   private final String END_PONT_RD = Helper.baseUrl()  +"productos/removerdeseos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityFavoritesBinding.inflate(getLayoutInflater());
+        itembinding = ItemProductoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
@@ -57,8 +60,6 @@ public class FavoritesActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-
-
         conServ = Volley.newRequestQueue(FavoritesActivity.this);
         binding.srlFavoritos.post(() -> {
             actualizarDeseos();
@@ -66,18 +67,57 @@ public class FavoritesActivity extends AppCompatActivity {
         binding.srlFavoritos.setOnRefreshListener(() -> {
             actualizarDeseos();
         });
+   itembinding.favoritos.setOnClickListener(view -> {
+       Toast.makeText(FavoritesActivity.this, "soy Favoritos", Toast.LENGTH_SHORT).show();
+   });
 
         binding.lvProductos.setOnItemClickListener(((adapterView, view, i, l) -> {
+            final SharedPreferences sPrefs =FavoritesActivity.this.getSharedPreferences(
+                    "calistenix",
+                    Context.MODE_PRIVATE
+            );
+            final String idcliente = sPrefs.getString("idcliente", null);
             //al darle click a un producto, tomamos su idProducto
             TextView tvIdprodcuto = view.findViewById(R.id.tv_idproducto);
             //pasamos como parámetro el string del id de producto
-            Toast.makeText(this, "estas en favs perro alv", Toast.LENGTH_SHORT).show();
-//            agregarListaDeseos(
-//                    tvIdprodcuto.getText().toString()
-//            );
-        }));
+                    removerListaDeseos(
+                    tvIdprodcuto.getText().toString(),
+                    idcliente
+            );
+        }
+        )
 
+        );
+    }
 
+    private void removerListaDeseos(String idproducto, String idcliente) {
+        final StringRequest petRemoverListaDeseos = new StringRequest(
+                Request.Method.POST,
+                END_PONT_RD,
+                response -> {
+                    try{
+                        JSONObject jsonObject = new JSONObject(response);
+                        Toast.makeText(FavoritesActivity.this, jsonObject.getString("mensaje"), Toast.LENGTH_SHORT).show();
+                    }
+                    catch(Exception e){
+                        Toast.makeText(FavoritesActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                },
+                error -> {
+                    Toast.makeText(FavoritesActivity.this,  error.toString(), Toast.LENGTH_SHORT).show();
+                }
+        ) {
+            @Nullable
+            @Override
+
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> parametros = new HashMap<>();
+                parametros.put("idcliente", idcliente);
+                parametros.put("idproducto", idproducto);
+                return parametros;
+            }
+        };
+        conServ.add(petRemoverListaDeseos);
     }
 
 
