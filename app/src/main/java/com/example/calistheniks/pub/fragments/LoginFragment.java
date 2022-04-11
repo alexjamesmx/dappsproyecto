@@ -30,8 +30,10 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -54,10 +56,7 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //VINCULAR LA VISTA CON EL CONTROLADOR POR MEDIO DE BINDING
         binding = FragmentLoginBinding.inflate(inflater, container, false);
-        navController = Navigation.findNavController(
-                getActivity(),
-                R.id.nav_host_fragment_content_catalogo
-        );
+
 
         conexionServ = Volley.newRequestQueue(getActivity());
 
@@ -188,47 +187,54 @@ public class LoginFragment extends Fragment {
 
                 final String email_cliente = binding.loginTietEmail.getText().toString();
                 final String password_cliente = binding.loginTietPassword.getText().toString();
-//                progress.setTitle("Iniciando sesión");
-//                progress.setMessage("Por favor espera...");
-//                progress.setIndeterminate(true);
-//                progress.setCancelable(false);
-//                progress.show();
+                progress.setTitle("Iniciando sesión");
+                progress.setMessage("Por favor espera...");
+                progress.setIndeterminate(true);
+                progress.setCancelable(false);
+                progress.show();
+
+
                 peticionServ = new StringRequest(
                         Request.Method.POST, url,
                         response -> {
                             binding.srl.setRefreshing(false);
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
+
+                                JSONObject jsonCliente =jsonObject.getJSONObject("cliente");
+
+                                final JSONObject objCliente = jsonObject.getJSONObject("cliente");
+                                final String token = jsonObject.getString("token");
+
                                 if (jsonObject.getBoolean("resultado") == true) {
 
-                                    final JSONObject objUsuario = jsonObject.getJSONObject("idcliente");
-                                    final String token = jsonObject.getString("token");
+//                                    Bundle result = new Bundle();
+//                                 String  idcliente =  jsonCliente.getString("idcliente");
+//                                    result.putString("idcliente", idcliente);
+
                                     Toast.makeText(
                                             getActivity(),
                                             jsonObject.getString("mensaje"),
                                             Toast.LENGTH_LONG
                                     ).show();
+                                    SharedPreferences sPrefs  = getActivity().getSharedPreferences(
+                                            "calistenix",
+                                            Context.MODE_PRIVATE
+                                    );
 
-//                                    SharedPreferences sPrefs = getActivity().getSharedPreferences(
-//                                            "dapps_201",
-//                                            Context.MODE_PRIVATE
-//                                    );
-//                                    Guardamos en las preferencias el token del usuario
-//                                    tambien guardamos el id encriptado del usuario
-//                                    SharedPreferences.Editor sPrefsEditor = sPrefs.edit();
-//                                    sPrefsEditor.putString("uat", token);
-//                                    sPrefsEditor.putString(
-//                                            "uai",
-//                                            Helper.MD5Hash(objUsuario.getString("idusuario"))
-//                                    );
-//                                    //Guardamos el id del usuario son encriptar
-//                                    sPrefsEditor.putString(
-//                                            "idusuario",
-//                                            objUsuario.getString("idusuario")
-//                                    );
-//                                    sPrefsEditor.commit();
-                                    navController.navigateUp();
-                                    navController.navigate(R.id.nav_catalogo);
+                                    SharedPreferences.Editor sPrefsEditor = sPrefs.edit();
+                                    sPrefsEditor.putString("uat", token);
+                                    sPrefsEditor.putString("uai",
+                                    Helper.MD5Hash(objCliente.getString("idcliente")));
+                                    sPrefsEditor.putString(
+                                            "idcliente",
+                                            objCliente.getString("idcliente")
+                                    );
+                                    sPrefsEditor.commit();
+
+
+                                    NavHostFragment.findNavController(LoginFragment.this)
+                                            .navigate(R.id.nav_catalogo);
                                 } else {
                                     Snackbar
                                             .make(view, jsonObject.getString("mensaje"), Snackbar.LENGTH_INDEFINITE)
@@ -256,6 +262,7 @@ public class LoginFragment extends Fragment {
                                     errorResponse.toString(),
                                     Toast.LENGTH_LONG
                             ).show();
+                            progress.hide();
                         }
                 ) {
                     @Nullable

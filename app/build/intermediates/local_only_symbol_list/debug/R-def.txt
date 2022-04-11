@@ -99,6 +99,7 @@ id register_til_lastname
 id register_til_password
 id register_til_phonenumber
 id srl
+id srl_favoritos
 id srl_productos
 id toolbar
 id tv_exist

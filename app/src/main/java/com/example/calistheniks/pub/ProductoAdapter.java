@@ -48,37 +48,37 @@ public class ProductoAdapter extends BaseAdapter {
             try {
                 JSONObject objProducto = datos.getJSONObject(i);
 
-                TextView tvIdProducto = view.findViewById(R.id.tv_idproducto);
-                tvIdProducto.setText(
-                        objProducto.getString("idproducto")
-                );
+                    TextView tvIdProducto = view.findViewById(R.id.tv_idproducto);
+                    tvIdProducto.setText(
+                            objProducto.getString("idproducto")
+                    );
+                    ImageView ivImagen = view.findViewById(R.id.iv_img_producto);
+                    Picasso.get()
+                            .load(
+                                    Helper.baseUrl() +
+                                            "../front/static/assets/img/build/img/calistenia/" + objProducto.getString("imagen_producto")
+                            ).placeholder(R.drawable.ic_menu_camera)
+                            .into(ivImagen);
+                    TextView tvNombre = view.findViewById(
+                            R.id.tv_nomproducto
+                    );
+                    tvNombre.setText(objProducto.getString("nombre_producto"));
+                    TextView tvPrecio = view.findViewById(
+                            R.id.tv_precio
+                    );
+                    tvPrecio.setText(
+                            "$" +
+                                    objProducto.getString("precio_producto") +
+                                    " MXN"
+                    );
+                    TextView tvExistencias = view.findViewById(
+                            R.id.tv_exist
+                    );
+                    tvExistencias.setText(
+                            objProducto.getString("cantidad")
+                                    + " pzs."
+                    );
 
-                ImageView ivImagen = view.findViewById(R.id.iv_img_producto);
-                Picasso.get()
-                        .load(
-                                Helper.baseUrl() +
-                                        "../front/static/assets/img/build/img/calistenia/" + objProducto.getString("imagen_producto")
-                        ).placeholder(R.drawable.ic_menu_camera)
-                        .into(ivImagen);
-                TextView tvNombre = view.findViewById(
-                        R.id.tv_nomproducto
-                );
-                tvNombre.setText(objProducto.getString("nombre_producto"));
-                TextView tvPrecio = view.findViewById(
-                        R.id.tv_precio
-                );
-                tvPrecio.setText(
-                        "$" +
-                                objProducto.getString("precio_producto") +
-                                " MXN"
-                );
-                TextView tvExistencias = view.findViewById(
-                        R.id.tv_exist
-                );
-                tvExistencias.setText(
-                        objProducto.getString("cantidad")
-                                + " pzs."
-                );
             }
             catch(Exception e) {
                 Log.e("Error lista prod", e.getMessage());

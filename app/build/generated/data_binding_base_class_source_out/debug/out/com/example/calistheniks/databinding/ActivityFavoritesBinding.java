@@ -4,25 +4,37 @@ package com.example.calistheniks.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.calistheniks.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityFavoritesBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final SwipeRefreshLayout rootView;
 
-  private ActivityFavoritesBinding(@NonNull LinearLayout rootView) {
+  @NonNull
+  public final ListView lvProductos;
+
+  @NonNull
+  public final SwipeRefreshLayout srlFavoritos;
+
+  private ActivityFavoritesBinding(@NonNull SwipeRefreshLayout rootView,
+      @NonNull ListView lvProductos, @NonNull SwipeRefreshLayout srlFavoritos) {
     this.rootView = rootView;
+    this.lvProductos = lvProductos;
+    this.srlFavoritos = srlFavoritos;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public SwipeRefreshLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +55,21 @@ public final class ActivityFavoritesBinding implements ViewBinding {
 
   @NonNull
   public static ActivityFavoritesBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.lv_productos;
+      ListView lvProductos = ViewBindings.findChildViewById(rootView, id);
+      if (lvProductos == null) {
+        break missingId;
+      }
 
-    return new ActivityFavoritesBinding((LinearLayout) rootView);
+      SwipeRefreshLayout srlFavoritos = (SwipeRefreshLayout) rootView;
+
+      return new ActivityFavoritesBinding((SwipeRefreshLayout) rootView, lvProductos, srlFavoritos);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

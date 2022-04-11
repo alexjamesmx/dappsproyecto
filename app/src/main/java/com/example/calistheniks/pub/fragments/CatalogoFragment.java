@@ -5,9 +5,11 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -26,8 +28,9 @@ import com.example.calistheniks.Helper;
 import com.example.calistheniks.databinding.FragmentCatalogoBinding;
 import com.example.calistheniks.pub.ProductoAdapter;
 import com.example.calistheniks.R;
-import org.json.JSONObject;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,37 +38,37 @@ public class CatalogoFragment extends Fragment {
 
     private FragmentCatalogoBinding binding;
     private RequestQueue conServ;
-    private String idTipoproducto;
     private final String END_POINT = Helper.baseUrl() + "productos/getproductos";
-    private final String END_POINT_LD = Helper.baseUrl() + "productos/getdeseos";
+    private final String END_POINT_LD = Helper.baseUrl() + "productos/insertardeseos";
 //    private final String END_POINT_LD = Helper.baseUrl() + "back/carrito/agregadeseo";
     private ProductoAdapter adaptador;
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentCatalogoBinding.inflate(inflater, container, false);
+       binding = FragmentCatalogoBinding.inflate(inflater, container, false);
+//        String str = "";
+//        String latitude = getArguments().getString("idcliente") ;
+//         String cliente = b.getString(b);
+//        str =cliente.getString("idcliente");
+//        Toast.makeText(getActivity(), cliente, Toast.LENGTH_LONG).show();
 
-//        final Bundle datos = getArguments();
-//        idTipoproducto = datos.getString("categoria_producto");
         conServ = Volley.newRequestQueue(getActivity());
-
         binding.srlProductos.post(() -> {
             actualizaProductos();
         });
-
         binding.srlProductos.setOnRefreshListener(() -> {
             actualizaProductos();
         });
 
-//        Click de cualquier elemento del ListView de productos
-            binding.lvProductos.setOnItemClickListener((adapterView, view, i, l) -> {
+//     //Click de cualquier elemento del ListView de productos
+        binding.lvProductos.setOnItemClickListener((adapterView, view, i, l) -> {
             //al darle click a un producto, tomamos su idProducto
             TextView tvIdprodcuto = view.findViewById(R.id.tv_idproducto);
-            Toast.makeText(getActivity(),"ME PICASTE",Toast.LENGTH_LONG).show();
-
             //pasamos como parámetro el string del id de producto
             agregarListaDeseos(
-                    tvIdprodcuto.getText().toString()
+                tvIdprodcuto.getText().toString()
             );
         });
 
@@ -114,35 +117,17 @@ public class CatalogoFragment extends Fragment {
         conServ.add(petServ);
     }
 
-    /*
-    Creamos un metodo para agregar a la lista de deseos el producto seleccionado
-     */
     public void agregarListaDeseos(String idProducto) {
-        //Buscamos los valores guardados de token y id
-        final SharedPreferences sPrefs = getActivity().getSharedPreferences(
-                "dapps_201",
-                Context.MODE_PRIVATE
-        );
-
-        /*
-        Tomamos el token y el idusuario de las preferencias,
-        si no lo encontramos guardamos un nulo
-         */
-        final String token = sPrefs.getString("uat", null);
-        final String idusario = sPrefs.getString("idusuario", null);
-
-        /*
-        Si el token o el idusuario es nulo significa que no ha iniciado
-        sesión
-         */
-        if (token == null || idusario == null) {
+                final SharedPreferences sPrefs = getActivity().getSharedPreferences(
+                        "calistenix",
+                        Context.MODE_PRIVATE
+                );
+                final String token = sPrefs.getString("uat", null);
+                final String idcliente = sPrefs.getString("idcliente", null);
+        if (token == null || idcliente == null) {
             final AlertDialog.Builder alerta = new AlertDialog.Builder(
                     getActivity()
             );
-
-            /*
-            Mostramos una alerta
-             */
             alerta.setTitle("ERROR");
             alerta.setMessage("Inicia sesión para agregar a la lista de deseos");
             alerta.setPositiveButton(
@@ -150,28 +135,19 @@ public class CatalogoFragment extends Fragment {
                     (dialogInterface,i) -> {
                         final NavController navController = Navigation.findNavController(
                                 getActivity(),
-                                R.id.host_public_fragments
+                                R.id.nav_host_fragment_content_catalogo
                         );
                         navController.navigateUp();
-                        navController.navigate(R.id.LoginFragment);
+                        navController.navigate(R.id.nav_login);
                     }
             );
             alerta.setNegativeButton("Cancelar", null);
             alerta.setCancelable(false);
             alerta.show();
-
-            //Terminamos la ejecucion del método
             return;
         }
 
-        /*
-        Insertamos el producto en la lista de deseos, para ello
-        necesitamos:
-        idproducto
-        idusuario
-        token
-         */
-        final StringRequest petAgregaListaDeseos = new StringRequest(
+               final StringRequest petAgregaListaDeseos = new StringRequest(
                 Request.Method.POST,
                 END_POINT_LD,
                 response -> {
@@ -179,11 +155,9 @@ public class CatalogoFragment extends Fragment {
                     //a un objeto json
                     try {
                         JSONObject objRespuesta = new JSONObject(response);
-
                         //Mostramos el mensaje del servicio
                         Toast.makeText(getActivity(), objRespuesta.getString("mensaje"), Toast.LENGTH_SHORT).show();
                     }
-
                     catch(Exception e) {
                         Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -194,20 +168,17 @@ public class CatalogoFragment extends Fragment {
         ) {
             @Nullable
             @Override
-            /*
-            Mandamos los parámetros POST que necesita el
-            servicio
-             */
+
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> parametros = new HashMap<>();
-                parametros.put("idusuario", idusario);
+                parametros.put("idcliente", idcliente);
                 parametros.put("idproducto", idProducto);
                 parametros.put("token", token);
 
                 return parametros;
             }
         };
-        //Ejecutamos el servicio
+//        Ejecutamos el servicio
         conServ.add(petAgregaListaDeseos);
     }
 }

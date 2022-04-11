@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
-        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_register.xml"
-    },
-    {
         "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/activity_register.xml"
     },
     {
         "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_google.png.flat",
@@ -32,12 +32,12 @@
         "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_house.xml"
     },
     {
-        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_nav_header_catalogo.xml.flat",
-        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/nav_header_catalogo.xml"
-    },
-    {
         "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable_ic_menu_gallery.xml.flat",
         "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/layout_nav_header_catalogo.xml.flat",
+        "source": "/home/alex/AndroidStudioProjects/Calistheniks/app/src/main/res/layout/nav_header_catalogo.xml"
     },
     {
         "merged": "/home/alex/AndroidStudioProjects/Calistheniks/app/build/intermediates/merged_res/debug/drawable-v24_barras_chicas_removebg.png.flat",

@@ -3056,6 +3056,7 @@ id src_atop
 id src_in
 id src_over
 id srl
+id srl_favoritos
 id srl_productos
 id standard
 id start

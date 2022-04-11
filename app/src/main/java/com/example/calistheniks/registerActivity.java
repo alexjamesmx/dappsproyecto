@@ -152,6 +152,10 @@ public class registerActivity extends AppCompatActivity {
                     Toast.makeText(registerActivity.this,  "Something's wrong", Toast.LENGTH_LONG).show();
                 }
                 }
+
+
+
+
         });
 
         progressDialog = new ProgressDialog(registerActivity.this);
@@ -241,6 +245,7 @@ public class registerActivity extends AppCompatActivity {
             }
         });
     }
+
 
 
     public boolean validarFirstName(String texto) {
@@ -353,7 +358,6 @@ public class registerActivity extends AppCompatActivity {
             return true;
     }
 }
-
     //USO DE ACTION BAR PARA VOLVER UN SCREEN ATRAS
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

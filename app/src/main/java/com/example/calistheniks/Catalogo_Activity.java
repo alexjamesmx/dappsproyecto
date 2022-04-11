@@ -37,7 +37,7 @@ public class Catalogo_Activity extends AppCompatActivity {
         //VINCULAR LA VISTA CON EL CONTROLADOR POR MEDIO DE BINDING
         binding = ActivityCatalogoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setSupportActionBar(binding.appBarCatalogo.toolbar);
+           setSupportActionBar(binding.appBarCatalogo.toolbar);
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
